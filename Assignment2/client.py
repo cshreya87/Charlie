@@ -21,11 +21,11 @@ except socket.error as msg:
 
 while 1:
 #wait to accept a connection - blocking call
-	print 'Please enter that Name'
+	print 'Please enter Name'
 	_Name=raw_input()
-	print 'Please enter that Age'
+	print 'Please enter Age'
 	_Age=raw_input()
-	print 'Please enter that Name'
+	print 'Please enter Matrikelnummer'
 	_Matrikelnummer=raw_input()
 	_socket.sendall(_Name+'::'+_Age+'::'+_Matrikelnummer)	
 	reply= _socket.recv(1024)
